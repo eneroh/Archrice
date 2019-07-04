@@ -1,0 +1,10 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) notify-send "Cpu Intensive Apps:
+$(ps axch -o cmd:15,%cpu --sort=-%cpu | head) " ;;
+	3) echo "Right Click" ;;
+esac
+
+TCPU=$(sensors | awk '/^temp1/ {print $2}')
+echo " ${TCPU} "
