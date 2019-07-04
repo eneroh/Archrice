@@ -1,1 +1,9 @@
+#!/bin/sh
 
+case $BLOCK_BUTTON in
+	1) notify-send "RAM Intensive Apps:
+$(ps axch -o cmd:15,%mem --sort=-%mem | head)" ;;
+	3) echo "Right Click" ;;
+esac
+
+free -h | awk '/^Mem:/{print $3 "/"$2}'
