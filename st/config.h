@@ -82,10 +82,11 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
   /* 8 normal colors */
-  [0] = "#bebebe", /* black   */
+  [0] = "#000000", /* black   */
   [1] = "#c2c2c2", /* red     */
   [2] = "#5d6683", /* green   */
   [3] = "#abafbd", /* yellow  */
@@ -143,8 +144,6 @@ static unsigned int mousebg = 0;
  * doesn't match the ones requested.
  */
 static unsigned int defaultattr = 11;
-static unsigned int defaultitalic = 7;
-static unsigned int defaultunderline = 7;
 
 /*
  * Internal mouse shortcuts.
@@ -455,4 +454,4 @@ static uint selmasks[] = {
 static char ascii_printable[] =
 	" !\"#$%&'()*+,-./0123456789:;<=>?"
 	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
-"`abcdefghijklmnopqrstuvwxyz{|}~";
+	"`abcdefghijklmnopqrstuvwxyz{|}~";
