@@ -1,0 +1,21 @@
+Hi, due to more customisability being with the version directly from suckless,
+please install the latest of ST by either visiting st on suckless.org or by following this link - https://st.suckless.org/
+
+More information I wanted to squeeze in here...
+
+Regularly I find cd'ing into the st folder and sudo make installing repetitive. 
+So to alleviate this, I wrote a script that does it for me. Haven't mapped it to anything YET but it's fewer clicks compared to:
+cd st-0.8.2
+sudo make install.
+
+A simple script in ~ called st.sh
+
+./st.sh
+
+I could simplify it further by just called it st and it would be ./st but meh.
+
+Future improvements mapping st update script to a keypress and more patches that improve st functionality :)
+
+Regards,
+
+En
