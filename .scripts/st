@@ -1,5 +1,5 @@
 # Updates st, typically placed in ~/ (Home) for easier accessibility. Only placed in .scripts for github >.>
-# Useful when changing terminal color, style and useful when patching st for added functionality
+# Useful when changing terminal color, style and when patching st for added functionality
 
 cd st-0.8.2 # edit for version number :)
 sudo make install
