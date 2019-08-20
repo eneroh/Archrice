@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Updates st, typically placed in ~/ (Home) for easier accessibility. Only placed in .scripts for github >.>
 # Useful when changing terminal color, style and when patching st for added functionality
 
