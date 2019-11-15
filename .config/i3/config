@@ -18,7 +18,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DeJaVu Sans Mono 11
+font pango:DeJaVu Sans Mono 9
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -100,16 +100,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:Term"
-set $ws2 "2:Web"
-set $ws3 "3:Editor"
-set $ws4 "4:Music"
-set $ws5 "5:Media"
-set $ws6 "6:Email"
-set $ws7 "7:Game"
-set $ws8 "8:Business"
-set $ws9 "9:Private"
-set $ws10 "10:Grave"
+set $ws1 "1 "
+set $ws2 "2 "
+set $ws3 "3 "
+set $ws4 "4 "
+set $ws5 "5 "
+set $ws6 "6 "
+set $ws7 "7 "
+set $ws8 "8 "
+set $ws9 "9 "
+set $ws10 "10 "
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -137,14 +137,13 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # link workspaces to applications
 assign [class="st-256color"] $ws1
-assign [class="Waterfox"] $ws2
+assign [class="firefox"] $ws2
 assign [class="qutebrowser"] $ws2
 assign [class="Notepadqq"] $ws3
 assign [class="vlc"] $ws5
 assign [class="mpv"] $ws5
 assign [class="Steam"] $ws7
 assign [class="Lutris"] $ws7
-assign [class="firefox"] $ws8
 assign [class="libreoffice-startcenter"] $ws8
 assign [class="VirtualBox Manager"] $ws9
 assign [class="Tor Browser"] $ws9
@@ -198,7 +197,7 @@ bar {
  	urgent_workspace   #900000 #900000 #FFFFFF 
 	binding_mode       #2F343A #900000 #FFFFFF
 }
-        status_command	i3blocks -c ~/.config/i3blocks/config/i3blocks.conf
+        status_command	i3blocks
 	position	top
 	bindsym button1 nop
 }
@@ -251,10 +250,9 @@ bindsym XF86AudioNext exec --no-startup-id mpc next
 bindsym XF86AudioPrev exec --no-startup-id mpc prev
 
 # auto-start programs
-exec --no-startup-id feh --bg-center ~/Pictures/Wallpapers/wallpaper.jpg
+exec --no-startup-id feh --bg-center ~/Pictures/Wallpaper/wallpaper.jpg
 exec --no-startup-id dunst
 exec --no-startup-id betterlockscreen -w dim
 exec --no-startup-id mpd
 exec --no-startup-id nm-applet
 # exec --no-startup-id pa-applet # git
-
