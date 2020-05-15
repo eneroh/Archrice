@@ -7,3 +7,7 @@ keypress release FOR SCROT: https://dwm.suckless.org/patches/keypressrelease/
 mpdcontrol (LAPTOP USE MAINLY): https://dwm.suckless.org/patches/mpdcontrol/
 nextprev (ABSOLUTELY VITAL, CANNOT LIVE WITHOUT THIS FEATURE: https://dwm.suckless.org/patches/nextprev/
 shiftview as replacement to nextprevtag: need to dig through previous link for info? Looks to be removed
+
+cosmetic
+noborder: https://dwm.suckless.org/patches/noborder/ (single windows have no borders)
+pango: https://dwm.suckless.org/patches/pango/
