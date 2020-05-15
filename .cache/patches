@@ -12,3 +12,6 @@ cosmetic
 noborder: https://dwm.suckless.org/patches/noborder/ (single windows have no borders)
 removeborder (SIMPLER VERSION OF ABOVE): https://dwm.suckless.org/patches/removeborder/
 pango: https://dwm.suckless.org/patches/pango/
+
+Unknown:
+xrdb: https://dwm.suckless.org/patches/xrdb/ (pretty sure I merged this in without realising)
