@@ -10,4 +10,5 @@ shiftview as replacement to nextprevtag: need to dig through previous link for i
 
 cosmetic
 noborder: https://dwm.suckless.org/patches/noborder/ (single windows have no borders)
+removeborder (SIMPLER VERSION OF ABOVE): https://dwm.suckless.org/patches/removeborder/
 pango: https://dwm.suckless.org/patches/pango/
