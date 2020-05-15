@@ -1,0 +1,9 @@
+patches for testing:
+
+autostart: https://dwm.suckless.org/patches/autostart/
+fullscreen: https://dwm.suckless.org/patches/fullscreen/
+hide vacant tags: https://dwm.suckless.org/patches/hide_vacant_tags/
+keypress release FOR SCROT: https://dwm.suckless.org/patches/keypressrelease/
+mpdcontrol (LAPTOP USE MAINLY): https://dwm.suckless.org/patches/mpdcontrol/
+nextprev (ABSOLUTELY VITAL, CANNOT LIVE WITHOUT THIS FEATURE: https://dwm.suckless.org/patches/nextprev/
+shiftview as replacement to nextprevtag: need to dig through previous link for info? Looks to be removed
