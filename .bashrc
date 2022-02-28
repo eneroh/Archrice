@@ -7,4 +7,5 @@
 
 alias ls='ls --color=auto'
 
-PS1='\e[0;32m[\u@\h \w]\$ '
+PS1='\e[0;32m[\u@\h \w]\$ \e[0m'
+
