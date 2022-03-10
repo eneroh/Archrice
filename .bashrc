@@ -9,4 +9,4 @@ alias ls='ls --color=auto'
 
 PS1='\[\n\[\e[32m\][\u@\h \w]\$\[\e[m\] '
 
-# for prompt you have to cancel out every little command, otherwise issues occur withold commands showing when scrolling through
+# for prompt you have to cancel out every little command, otherwise issues occur with old commands showing when scrolling through
