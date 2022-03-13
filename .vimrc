@@ -17,6 +17,19 @@ runtime! archlinux.vim
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
+if has("termguicolors")
+ set termguicolors
+endif
+ 
+if (has("autocmd") && !has("gui_running"))
+    augroup colors
+    autocmd!
+   let s:background = { "gui": "#171421", "cterm": "235", "cterm16": "0" }
+   autocmd ColorScheme * call onedark#set_highlight("Normal", { "bg": s:background }) "No `fg` setting
+  augroup END
+ endif
+
+colorscheme onedark
 set number
 set showmatch
 syntax on
@@ -36,3 +49,7 @@ set foldnestmax=10 " 10 nested fold max
 nnoremap <space> za" 
 set foldmethod=indent " or marker
 let mapleader="'" " leader is apostrophe
+
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }    
