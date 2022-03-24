@@ -10,7 +10,7 @@ PROMPT_EOL_MARK=""
 NEWLINE_BEFORE_PROMPT=yes
 
 autoload -U colors && colors
-PROMPT="%B%{$fg[green]%}[$USER@$HOST %7~]%{$reset_color%} "
+PROMPT="%B%{$fg[green]%}[$USER@$HOST %7~]%#%{$reset_color%} "
 #PROMPT='\[\e[32m\][\u@\h \w]\$\[\e[m\] '
 alias vim='nvim'
 LS_COLORS='di=1;35:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90:*.png=35:*.gif=36:*.jpg=35:*.c=92:*.jar=33:*.py=93:*.h=90:*txt=94:*.doc=104:*.odt=104:*.csv=102:*.xlsx=102:*.rb=31:*.cpp=92:*.sh=92:*.html=96:*.zip=4;33:*.tar.gz=4;33:*.mp4=105:*.mp3=106'
@@ -154,6 +154,14 @@ if [ -x /usr/bin/dircolors ]; then
   export LESS_TERMCAP_us=$'\E[1;32m'	# begin underline
   export LESS_TERMCAP_ue=$'\E[0m'			# reset underline
 fi
+
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=\$vcs_info_msg_0_
+zstyle ':vcs_info:git:*' formats '%F{240}(%b)%r%f'
+zstyle ':vcs_info:*' enable git
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions.zsh ]; then
