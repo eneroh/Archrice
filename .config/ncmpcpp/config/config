@@ -62,7 +62,7 @@
 ##
 ## If you set format to 44100:16:2, make it 'yes'.
 ##
-#visualizer_in_stereo = yes
+visualizer_in_stereo = "yes"
 #
 ##
 ## Note: Below parameter defines how often ncmpcpp has to "synchronize"
@@ -82,9 +82,19 @@
 ##
 #visualizer_type = wave
 #
-#visualizer_look = ●▮
+visualizer_look = ●▮
+#visualizer_look = "▉▋"
+#visualizer_look = "▋▋"
+#visualizer_look = "◆▋"
+#visualizer_look = "◈░"
+#visualizer_look = "││"
+#visualizer_look = "▀▋"
+#visualizer_look = "▀○"
+#visualizer_look = "█▋"
+#visualizer_look = "██"
+
 #
-#visualizer_color = blue, cyan, green, yellow, magenta, red
+visualizer_color = blue, cyan, green, yellow, magenta, red
 #
 ## Alternative subset of 256 colors for terminals that support it.
 ##
@@ -299,7 +309,7 @@
 #
 #playlist_editor_display_mode = classic
 #
-#discard_colors_if_item_is_selected = yes
+discard_colors_if_item_is_selected = "yes"
 #
 #show_duplicate_tags = yes
 #
@@ -309,15 +319,29 @@
 #
 #volume_change_step = 2
 #
-#autocenter_mode = no
+autocenter_mode = "yes"
 #
-#centered_cursor = no
+centered_cursor = "yes"
 #
 ##
 ## Note: You can specify third character which will be used to build 'empty'
 ## part of progressbar.
 ##
-#progressbar_look = =>
+#progressbar_look = "___"
+#progressbar_look = "─╼ "
+#progressbar_look = "┅┅┄"
+#progressbar_look = "─➞─"
+#progressbar_look = "─┅─"
+# progressbar_look = "▁▁▁"
+# progressbar_look = "≈►·"
+# progressbar_look = "→→"
+# progressbar_look = "▪▪▪"
+# progressbar_look = "▪▪▫"
+progressbar_look = "░█ "
+# progressbar_look = "▒▒░"
+# progressbar_look = "▒▓░"
+#progressbar_look = "▃▃▃" # Very minimalistic
+#progressbar_look = "─⊙┄"
 #
 ## Available values: database, playlist.
 ##
@@ -341,11 +365,11 @@ user_interface = "alternative"
 #
 #default_tag_editor_pattern = %n - %t
 #
-#header_visibility = yes
+header_visibility = "no"
 #
-#statusbar_visibility = yes
+statusbar_visibility = "no"
 #
-#titles_visibility = yes
+titles_visibility = "no"
 #
 #header_text_scrolling = yes
 #
@@ -399,7 +423,7 @@ user_interface = "alternative"
 ## Note: You can define startup slave screen by choosing screen from the list
 ## above or an empty value for no slave screen.
 ##
-#startup_slave_screen = ""
+startup_slave_screen = "visualizer"
 #
 #startup_slave_screen_focus = no
 #
@@ -419,9 +443,9 @@ user_interface = "alternative"
 #
 #display_volume_level = yes
 #
-#display_bitrate = no
+display_bitrate = "yes"
 #
-#display_remaining_time = no
+display_remaining_time = "no"
 #
 ## Available values: none, basic, extended, perl.
 ##
@@ -454,7 +478,7 @@ user_interface = "alternative"
 #
 #media_library_sort_by_mtime = no
 #
-#enable_window_title = yes
+enable_window_title = "no"
 #
 ##
 ## Note: You can choose default search mode for search engine. Available modes
@@ -512,11 +536,11 @@ colors_enabled = "yes"
 #
 empty_tag_color = "cyan"
 #
-header_window_color = "white"
+header_window_color = "black"
 #
 volume_color = "white"
 #
-state_line_color = "default"
+state_line_color = "black"
 #
 state_flags_color = "default:b"
 #
@@ -526,13 +550,13 @@ color1 = "default"
 #
 color2 = "green"
 #
-progressbar_color = "black:b"
+progressbar_color = "black"
 #
 progressbar_elapsed_color = "green:b"
 #
-statusbar_color = "default"
+statusbar_color = "white"
 #
-statusbar_time_color = "white:b"
+statusbar_time_color = "black:b"
 #
 player_state_color = "default:b"
 #
