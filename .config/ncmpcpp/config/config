@@ -325,7 +325,7 @@
 #
 ## Available values: classic, alternative.
 ##
-#user_interface = classic
+user_interface = "alternative"
 #
 #data_fetching_delay = yes
 #
@@ -508,37 +508,37 @@
 ## are used there is a possibility that you'll be able to use only colors with
 ## transparent background.
 #
-#colors_enabled = yes
+colors_enabled = "yes"
 #
-#empty_tag_color = cyan
+empty_tag_color = "cyan"
 #
-#header_window_color = default
+header_window_color = "white"
 #
-#volume_color = default
+volume_color = "white"
 #
-#state_line_color = default
+state_line_color = "default"
 #
-#state_flags_color = default:b
+state_flags_color = "default:b"
 #
-#main_window_color = yellow
+main_window_color = "white"
 #
-#color1 = white
+color1 = "default"
 #
-#color2 = green
+color2 = "green"
 #
-#progressbar_color = black:b
+progressbar_color = "black:b"
 #
-#progressbar_elapsed_color = green:b
+progressbar_elapsed_color = "green:b"
 #
-#statusbar_color = default
+statusbar_color = "default"
 #
-#statusbar_time_color = default:b
+statusbar_time_color = "white:b"
 #
-#player_state_color = default:b
+player_state_color = "default:b"
 #
-#alternative_ui_separator_color = black:b
+alternative_ui_separator_color = "black:b"
 #
-#window_border_color = green
+window_border_color = "green"
 #
-#active_window_border = red
+active_window_border = "red"
 #
