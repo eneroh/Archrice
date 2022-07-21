@@ -1,0 +1,11 @@
+# mpc play/pause                                                                          
+"mpc toggle && sh ~/.scripts/OSD.sh"    
+XF86AudioPlay + Shift    
+    
+# mpc next track    
+"mpc next && sh ~/.scripts/OSD.sh"    
+XF86AudioNext + Shift    
+    
+# mpc previous track    
+"mpc prev && sh ~/.scripts/OSD.sh"    
+XF86AudioPrev + Shift  
