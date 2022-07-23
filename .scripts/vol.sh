@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Script isn't very snappy, there is lag on notifications when updating sound. Has to be a better way in gnome. Maybe changing to dunst notifications instead.
+
 line1=$(echo "mpc volume")
 line2=$( sleep 1 && mpc status %volume%)
 #line2=$(mpc current)
